@@ -1,12 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  // GitHub Pagesのリポジトリ名がユーザー名と異なる場合は、basePath設定が必要
-  // 例: リポジトリ名が「portfolio」の場合
-  // basePath: '/portfolio',
+  // リポジトリ名を指定（例：portfolio）
+  // ユーザー名.github.ioリポジトリの場合は空文字列にする
+  basePath: '', // リポジトリ名に置き換える
+  assetPrefix: '', // リポジトリ名に置き換える
   images: {
     unoptimized: true,
   },
+  // 静的HTMLのエクスポート時にtrailingSlashを有効にする
+  trailingSlash: true,
 }
 
 module.exports = nextConfig
