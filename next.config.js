@@ -9,8 +9,8 @@ if (isGithubActions) {
   // 形式: {owner}/{repo}
   const repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, '')
   
-  assetPrefix = `/`
-  basePath = `/
+  assetPrefix = ``
+  basePath = ``
 }
 
 const nextConfig = {
