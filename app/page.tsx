@@ -351,7 +351,7 @@ export default function Home() {
       <footer className="w-full border-t py-6 md:py-0 bg-muted">
         <div className="container flex flex-col items-center justify-between gap-4 md:h-16 md:flex-row">
           <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
-            © {new Date().getFullYear()} Chihiro Yano. All rights reserved. <span className="block md:inline">Created by Chihiro Yano using Claude-3.7 and v0.</span>
+            © {new Date().getFullYear()} Chihiro Yano. All rights reserved. 
           </p>
         </div>
       </footer>
