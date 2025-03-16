@@ -8,7 +8,11 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Chihiro Yano",
   description: "ポートフォリオサイト",
-    generator: 'v0.dev'
+    generator: 'v0.dev',
+  icons: {
+    icon: '/icon_kawaii.jpg',
+    apple: '/icon_kawaii.jpg',
+  }
 }
 
 export default function RootLayout({
