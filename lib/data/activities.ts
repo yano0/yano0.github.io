@@ -36,7 +36,7 @@ export const internships: Internship[] = [
     description: ``
   },
   {
-    company: "PAKSHA Technology",
+    company: "PKSHA Technology",
     period: "2023年1月 - 2024年3月",
     description: ``
   },
