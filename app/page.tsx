@@ -7,7 +7,6 @@ import Image from "next/image"
 // データファイルからのインポート
 import { profileData } from "@/lib/data/profile"
 import { researchPapers } from "@/lib/data/research"
-import { projects } from "@/lib/data/projects"
 import { internships, activities } from "@/lib/data/activities"
 import { educationItems } from "@/lib/data/background"
 
