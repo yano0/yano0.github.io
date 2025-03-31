@@ -19,7 +19,7 @@ export interface ProfileData {
 export const profileData: ProfileData = {
   name: "矢野 千紘",
   tagline: "意味理解と埋め込み表現に興味があります",
-  affiliation: "株式会社PKSHA Technology 機械学習エンジニア",
+  affiliation: "名古屋大学 笹野研究室",
   email: "yanonay3[at]gmail.com", // 実際のメールアドレスに変更してください
   profileImage: "./icon_real.jpg", // 実際のプロフィール画像のパスに変更してください
   socialLinks: {
