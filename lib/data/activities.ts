@@ -42,7 +42,7 @@ export const internships: Internship[] = [
   },
   {
     company: "株式会社レトリバ",
-    period: "2024年8月 - 2024年9月",
+    period: "2025年8月 - 2025年9月",
     description: ``
   },
 ];
