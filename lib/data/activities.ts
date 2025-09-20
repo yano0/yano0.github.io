@@ -40,6 +40,11 @@ export const internships: Internship[] = [
     period: "2023年1月 - 2024年3月",
     description: ``
   },
+  {
+    company: "株式会社レトリバ",
+    period: "2024年8月 - 2024年9月",
+    description: ``
+  },
 ];
 
 export const activities: Activity[] = [
@@ -74,8 +79,8 @@ export const activities: Activity[] = [
       },
       {
         name: "NLP2025 参加報告会 presented by Money Forward Lab",
-        detail: "2025年4月 頑張ります",
-        url: "https://moneyforward.connpass.com/event/344276/"
+        detail: "2025年4月 NLP聴講参加報告",
+        url: "https://speakerdeck.com/yano0/nlp2025can-jia-bao-gao"
       },
     ]
   },
@@ -97,6 +102,11 @@ export const activities: Activity[] = [
     title: "輪講資料",
     icon: "BookOpen",
     items: [
+      {
+        name: "How Do Large Language Models Acquire Factual Knowledge During Pretraining?",
+        detail:"",
+        url: "https://speakerdeck.com/yano0/how-do-large-language-models-acquire-factual-knowledge-during-pretraining"
+      },
       {
         name: "SIMLM: Pre-training with Representation Bottleneck for Dense Passage Retrieval",
         detail:"",

@@ -12,6 +12,18 @@ export interface ResearchPaper {
 
 export const researchPapers: ResearchPaper[] = [
   {
+    title: "FrameEOL: Semantic Frame Induction using Causal Language Models",
+    period: "2025.11",
+    conference: "EMNLP 2025 Findings",
+    description: ``,
+    pageLink: "#",
+    paperLink: "#",
+    codeLink: "#",
+    peerReviewed: true,
+    ModelLinks: [
+    ]
+  },
+  {
     title: "大規模モデルの蒸留を用いた日本語文埋め込みモデル",
     period: "2024.09",
     conference: "第19回YANSシンポジウム",
