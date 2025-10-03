@@ -202,7 +202,7 @@ export default function Home() {
                                 <Button size="sm" variant="outline" asChild>
                                   <Link href={paper.paperLink} target="_blank" rel="noreferrer">
                                     <BookOpen className="mr-2 h-4 w-4" />
-                                    論文を読む
+                                    論文
                                   </Link>
                                 </Button>
                               )}
@@ -287,6 +287,16 @@ export default function Home() {
                       <h3 className="font-bold text-xl">{internship.company}</h3>
                       <p className="text-muted-foreground">{internship.period}</p>
                       <p className="mt-2">{internship.description}</p>
+                      {internship.blogUrl && (
+                        <div className="mt-4">
+                          <Button size="sm" variant="outline" asChild>
+                            <Link href={internship.blogUrl} target="_blank" rel="noreferrer">
+                              <Newspaper className="mr-2 h-4 w-4" />
+                              ブログ
+                            </Link>
+                          </Button>
+                        </div>
+                      )}
                     </div>
                   </CardContent>
                 </Card>

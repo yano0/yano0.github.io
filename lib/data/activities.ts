@@ -2,6 +2,7 @@ export interface Internship {
   company: string;
   period: string;
   description: string;
+  blogUrl?: string;
 }
 
 export interface Activity {
@@ -43,7 +44,8 @@ export const internships: Internship[] = [
   {
     company: "株式会社レトリバ",
     period: "2025年8月 - 2025年9月",
-    description: ``
+    description: `「テキスト埋め込みモデルの蒸留に関する調査」`,
+    blogUrl: "https://zenn.dev/retrieva_tech/articles/c0a7fc6fe35fb4"
   },
 ];
 
