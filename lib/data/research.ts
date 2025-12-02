@@ -16,9 +16,9 @@ export const researchPapers: ResearchPaper[] = [
     period: "2025.11",
     conference: "EMNLP 2025 Findings",
     description: ``,
-    pageLink: "#",
-    paperLink: "#",
-    codeLink: "#",
+    pageLink: "https://aclanthology.org/2025.findings-emnlp.623/",
+    paperLink: "https://aclanthology.org/2025.findings-emnlp.623.pdf",
+    codeLink: "https://github.com/SasanoLab/semantic-frame-induction",
     peerReviewed: true,
     ModelLinks: [
     ]

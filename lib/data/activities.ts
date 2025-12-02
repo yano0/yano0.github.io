@@ -105,6 +105,11 @@ export const activities: Activity[] = [
     icon: "BookOpen",
     items: [
       {
+        name: "Decoding Dense Embeddings: Sparse Autoencoders for Interpreting and Discretizing Dense Retrieval",
+        detail:"",
+        url: "https://speakerdeck.com/yano0/lun-jiang-zi-liao-decoding-dense-embeddings-sparse-autoencoders-for-interpreting-and-discretizing-dense-retrieval"
+      },
+      {
         name: "How Do Large Language Models Acquire Factual Knowledge During Pretraining?",
         detail:"",
         url: "https://speakerdeck.com/yano0/how-do-large-language-models-acquire-factual-knowledge-during-pretraining"
