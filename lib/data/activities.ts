@@ -56,7 +56,7 @@ export const activities: Activity[] = [
     items: [
       {
         name: "YANS運営委員",
-        detail: "2024年〜",
+        detail: "2024年度〜2025年度",
       }
     ]
   },
