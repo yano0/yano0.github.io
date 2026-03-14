@@ -12,6 +12,18 @@ export interface ResearchPaper {
 
 export const researchPapers: ResearchPaper[] = [
   {
+    title: "FrameBench: 意味フレームに基づく意味理解ベンチマーク",
+    period: "2025.03",
+    conference: "言語処理学会 第31回年次大会",
+    description: ``,
+    pageLink: "https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/Q4-13.pdf",
+    paperLink: "https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/Q4-13.pdf",
+    codeLink: "https://github.com/SasanoLab/FrameBench",
+    peerReviewed: false,
+    ModelLinks: [
+    ]
+  },
+  {
     title: "FrameEOL: Semantic Frame Induction using Causal Language Models",
     period: "2025.11",
     conference: "EMNLP 2025 Findings",
