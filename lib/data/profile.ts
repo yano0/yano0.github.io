@@ -25,7 +25,7 @@ export const profileData: ProfileData = {
   socialLinks: {
     github: "https://github.com/yano0",
     x: "https://x.com/yano0_c",
-    linkedin: "https://www.linkedin.com/in/yano0", // 実際のLinkedInユーザー名に変更してください
+    linkedin: "https://www.linkedin.com/in/yano0-c/", // 実際のLinkedInユーザー名に変更してください
     other: [
       {
         name: "ブログ",
