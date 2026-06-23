@@ -47,6 +47,12 @@ export const internships: Internship[] = [
     description: `テキスト埋め込みモデルの蒸留に関する調査`,
     blogUrl: "https://zenn.dev/retrieva_tech/articles/c0a7fc6fe35fb4"
   },
+  {
+    company: "SB Intuitions株式会社",
+    period: "2026年4月 - ",
+    description: `日本語エージェントベンチマーク「J-tau telecom」の公開`,
+    blogUrl: "https://www.sbintuitions.co.jp/blog/entry/2026/06/19/100154"
+  },
 ];
 
 export const activities: Activity[] = [
@@ -57,6 +63,10 @@ export const activities: Activity[] = [
       {
         name: "YANS運営委員",
         detail: "2024年度〜2025年度",
+      },
+      {
+        name: "最先端NLP勉強会 運営",
+        detail: "2026年度〜",
       }
     ]
   },
