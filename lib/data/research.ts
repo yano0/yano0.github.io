@@ -12,6 +12,18 @@ export interface ResearchPaper {
 
 export const researchPapers: ResearchPaper[] = [
   {
+    title: "日本語エージェントベンチマーク「J-tau」の構築",
+    period: "2026.08",
+    conference: "第21回YANSシンポジウム",
+    description: ``,
+    pageLink: "https://yans.anlp.jp/entry/yans2026program#:~:text=%5BS2%2DP01%5D%20%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%82%A8%E3%83%BC%E3%82%B8%E3%82%A7%E3%83%B3%E3%83%88%E3%83%99%E3%83%B3%E3%83%81%E3%83%9E%E3%83%BC%E3%82%AF%E3%80%8CJ%2Dtau%E3%80%8D%E3%81%AE%E6%A7%8B%E7%AF%89",
+    paperLink: "#",
+    codeLink: "https://github.com/sbintuitions/j-tau-bench",
+    peerReviewed: false,
+    ModelLinks: [
+    ]
+  },
+  {
     title: "FrameBench: 意味フレームに基づく意味理解ベンチマーク",
     period: "2026.03",
     conference: "言語処理学会 第31回年次大会",
