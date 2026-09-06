@@ -12,6 +12,18 @@ export interface ResearchPaper {
 
 export const researchPapers: ResearchPaper[] = [
   {
+    title: "FrameBench: A Language Understanding Benchmark Based on Frame Semantics",
+    period: "2026.10",
+    conference: "EMNLP 2026 Findings",
+    description: ``,
+    pageLink: "",
+    paperLink: "#",
+    codeLink: "",
+    peerReviewed: true,
+    ModelLinks: [
+    ]
+  },
+  {
     title: "日本語エージェントベンチマーク「J-tau」の構築",
     period: "2026.08",
     conference: "第21回YANSシンポジウム",
