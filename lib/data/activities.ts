@@ -11,8 +11,25 @@ export interface Activity {
     name: string;
     detail: string;
     url?: string;
+    category?: string;
   }>;
   icon: string;
+  fullWidth?: boolean;
+  note?: string;
+}
+
+// 同じカテゴリの項目が隣接している前提で、データの並び順どおりにまとめる
+export function groupActivityItems(items: Activity["items"]) {
+  const groups: Array<{ category?: string; items: Activity["items"] }> = [];
+  for (const item of items) {
+    const current = groups[groups.length - 1];
+    if (current && current.category === item.category) {
+      current.items.push(item);
+    } else {
+      groups.push({ category: item.category, items: [item] });
+    }
+  }
+  return groups;
 }
 
 export const internships: Internship[] = [
@@ -113,48 +130,59 @@ export const activities: Activity[] = [
   {
     title: "輪講資料",
     icon: "BookOpen",
+    fullWidth: true,
+    note: "*カテゴリはClaude Opus 5による",
     items: [
       {
-        name: "Lost in Execution: On the Multilingual Robustness of Tool Calling in Large Language Models",
-        detail:"",
-        url: "https://speakerdeck.com/yano0/rinkou-shiryou-lost-in-execution-on-the-multilingual-robustness-of-tool-calling-in-large-language-models"
-      },
-      {
-        name: "How much can language models memorize?",
-        detail:"",
-        url: "https://speakerdeck.com/yano0/rinkou-shiryou-how-much-can-language-models-memorize"
-      },
-      {
+        category: "文埋め込み・文書検索",
         name: "Decoding Dense Embeddings: Sparse Autoencoders for Interpreting and Discretizing Dense Retrieval",
         detail:"",
         url: "https://speakerdeck.com/yano0/lun-jiang-zi-liao-decoding-dense-embeddings-sparse-autoencoders-for-interpreting-and-discretizing-dense-retrieval"
       },
       {
+        category: "文埋め込み・文書検索",
         name: "Length-Induced Embedding Collapse in PLM-based Models",
         detail:"",
         url: "https://speakerdeck.com/yano0/length-induced-embedding-collapse-in-plm-based-models"
       },
       {
-        name: "How Do Large Language Models Acquire Factual Knowledge During Pretraining?",
-        detail:"",
-        url: "https://speakerdeck.com/yano0/how-do-large-language-models-acquire-factual-knowledge-during-pretraining"
-      },
-      {
+        category: "文埋め込み・文書検索",
         name: "SimLM: Pre-training with Representation Bottleneck for Dense Passage Retrieval",
         detail:"",
         url: "https://speakerdeck.com/yano0/lun-jiang-zi-liao-simlm-pre-training-with-representation-bottleneck-for-dense-passage-retrieval"
       },
       {
+        category: "大規模言語モデルの分析",
+        name: "How much can language models memorize?",
+        detail:"",
+        url: "https://speakerdeck.com/yano0/rinkou-shiryou-how-much-can-language-models-memorize"
+      },
+      {
+        category: "大規模言語モデルの分析",
+        name: "How Do Large Language Models Acquire Factual Knowledge During Pretraining?",
+        detail:"",
+        url: "https://speakerdeck.com/yano0/how-do-large-language-models-acquire-factual-knowledge-during-pretraining"
+      },
+      {
+        category: "推論・ツール利用",
+        name: "Lost in Execution: On the Multilingual Robustness of Tool Calling in Large Language Models",
+        detail:"",
+        url: "https://speakerdeck.com/yano0/rinkou-shiryou-lost-in-execution-on-the-multilingual-robustness-of-tool-calling-in-large-language-models"
+      },
+      {
+        category: "推論・ツール利用",
         name: "ReAct: Synergizing Reasoning and Acting in Language Models / Tree of Thoughts: Deliberate Problem Solving with Large Language Models",
         detail:"",
         url: "https://speakerdeck.com/yano0/tree-of-thoughts-deliberate-problem-solving-with-large-language-models"
       },
       {
+        category: "多言語・言語転移",
         name: "Zero-shot Cross-lingual Semantic Parsing",
         detail:"",
         url: "https://speakerdeck.com/yano0/lun-jiang-zi-liao-zero-shot-cross-lingual-semantic-parsing"
       },
       {
+        category: "多言語・言語転移",
         name: "From Zero to Hero: On the Limitations of Zero-Shot Language Transfer with Multilingual Transformers",
         detail:"",
         url: "https://speakerdeck.com/yano0/lun-jiang-zi-liao-from-zero-to-hero-on-the-limitations-of-zero-shot-language-transfer-with-multilingual-transformers"

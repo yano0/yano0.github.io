@@ -7,7 +7,7 @@ import Image from "next/image"
 // データファイルからのインポート
 import { profileData } from "@/lib/data/profile"
 import { researchPapers } from "@/lib/data/research"
-import { internships, activities } from "@/lib/data/activities"
+import { internships, activities, groupActivityItems } from "@/lib/data/activities"
 import { educationItems } from "@/lib/data/background"
 
 export default function Home() {
@@ -315,7 +315,7 @@ export default function Home() {
             <div className="mx-auto grid max-w-5xl grid-cols-1 md:grid-cols-2 gap-6 mt-8">
               {/* 活動リスト */}
               {activities.map((activity, index) => (
-                <Card key={index}>
+                <Card key={index} className={activity.fullWidth ? "md:col-span-2" : undefined}>
                   <CardContent className="p-6">
                     <div className="flex items-center gap-4 mb-4">
                       {activity.icon === "Users" && <Users className="h-8 w-8 text-primary" />}
@@ -327,27 +327,39 @@ export default function Home() {
                       {activity.icon === "GraduationCap" && <GraduationCap className="h-8 w-8 text-primary" />}
                       <h3 className="font-bold text-xl">{activity.title}</h3>
                     </div>
-                    <ul className="space-y-3">
-                      {activity.items.map((item, itemIndex) => (
-                        <li key={itemIndex} className="flex flex-col">
-                          {item.url ? (
-                            <Link 
-                              href={item.url} 
-                              target="_blank" 
-                              rel="noreferrer" 
-                              className="font-medium hover:underline hover:text-primary transition-colors"
-                            >
-                              {item.name}
-                            </Link>
-                          ) : (
-                            <span className="font-medium">{item.name}</span>
+                    <div className="space-y-4">
+                      {groupActivityItems(activity.items).map((group, groupIndex) => (
+                        <div key={groupIndex} className="space-y-2">
+                          {group.category && (
+                            <h4 className="text-sm font-semibold text-muted-foreground">{group.category}</h4>
                           )}
-                          {item.detail && (
-                            <span className="text-muted-foreground">{item.detail}</span>
-                          )}
-                        </li>
+                          <ul className="list-disc pl-5 space-y-2 marker:text-primary">
+                            {group.items.map((item, itemIndex) => (
+                              <li key={itemIndex}>
+                                {item.url ? (
+                                  <Link 
+                                    href={item.url} 
+                                    target="_blank" 
+                                    rel="noreferrer" 
+                                    className="font-medium hover:underline hover:text-primary transition-colors"
+                                  >
+                                    {item.name}
+                                  </Link>
+                                ) : (
+                                  <span className="font-medium">{item.name}</span>
+                                )}
+                                {item.detail && (
+                                  <span className="block text-muted-foreground">{item.detail}</span>
+                                )}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
                       ))}
-                    </ul>
+                    </div>
+                    {activity.note && (
+                      <p className="mt-4 text-xs text-muted-foreground">{activity.note}</p>
+                    )}
                   </CardContent>
                 </Card>
               ))}
