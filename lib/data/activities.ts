@@ -115,9 +115,24 @@ export const activities: Activity[] = [
     icon: "BookOpen",
     items: [
       {
+        name: "Lost in Execution: On the Multilingual Robustness of Tool Calling in Large Language Models",
+        detail:"",
+        url: "https://speakerdeck.com/yano0/rinkou-shiryou-lost-in-execution-on-the-multilingual-robustness-of-tool-calling-in-large-language-models"
+      },
+      {
+        name: "How much can language models memorize?",
+        detail:"",
+        url: "https://speakerdeck.com/yano0/rinkou-shiryou-how-much-can-language-models-memorize"
+      },
+      {
         name: "Decoding Dense Embeddings: Sparse Autoencoders for Interpreting and Discretizing Dense Retrieval",
         detail:"",
         url: "https://speakerdeck.com/yano0/lun-jiang-zi-liao-decoding-dense-embeddings-sparse-autoencoders-for-interpreting-and-discretizing-dense-retrieval"
+      },
+      {
+        name: "Length-Induced Embedding Collapse in PLM-based Models",
+        detail:"",
+        url: "https://speakerdeck.com/yano0/length-induced-embedding-collapse-in-plm-based-models"
       },
       {
         name: "How Do Large Language Models Acquire Factual Knowledge During Pretraining?",
@@ -125,7 +140,7 @@ export const activities: Activity[] = [
         url: "https://speakerdeck.com/yano0/how-do-large-language-models-acquire-factual-knowledge-during-pretraining"
       },
       {
-        name: "SIMLM: Pre-training with Representation Bottleneck for Dense Passage Retrieval",
+        name: "SimLM: Pre-training with Representation Bottleneck for Dense Passage Retrieval",
         detail:"",
         url: "https://speakerdeck.com/yano0/lun-jiang-zi-liao-simlm-pre-training-with-representation-bottleneck-for-dense-passage-retrieval"
       },
